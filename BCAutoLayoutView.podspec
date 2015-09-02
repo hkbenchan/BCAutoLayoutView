@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BCAutoLayoutView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A drop-in solution for add subviews without consider setting NSLayoutConstraint"
 
   s.description  = <<-DESC
@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = { :type => "MIT" }
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = 'MIT'
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
