@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  BCAutoLayoutView
+//  BCAutoLayoutViewSample
 //
 //  Created by Chan Ho Pan on 2/9/2015.
 //  Copyright (c) 2015 hpchan. All rights reserved.
@@ -20,17 +20,16 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
 }
+
 
 - (NSMutableArray *)autoLayoutViews
 {
@@ -101,7 +100,7 @@
 
 - (void)userDidTap:(UITapGestureRecognizer *)tapGestureRecognizer
 {
-//  NSLog(@"user did tap %@", tapGestureRecognizer);
+  //  NSLog(@"user did tap %@", tapGestureRecognizer);
   
   if (tapGestureRecognizer.view == [self.autoLayoutViews lastObject]) {
     UIView *view = (UIView *)[self.autoLayoutViews lastObject];
@@ -113,6 +112,7 @@
     [view removeFromSuperview];
   }
 }
+
 
 
 @end

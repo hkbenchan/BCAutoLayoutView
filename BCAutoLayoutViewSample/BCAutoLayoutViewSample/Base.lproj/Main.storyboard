@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SJY-do-aHK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6fa-WB-Yl7">
+            <objects>
+                <viewController id="SJY-do-aHK" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CAh-fz-Ure"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fh-kQ-bNO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AXc-Yd-QFz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJm-eh-YtO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.87843137250000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yg-0E-U6r">
+                                <rect key="frame" x="16" y="558" width="100" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UJh-wD-37s"/>
+                                    <constraint firstAttribute="height" constant="30" id="nUT-2R-RVw"/>
+                                </constraints>
+                                <state key="normal" title="BCZeroSpace">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="zeroSpaceButtonPressed:" destination="SJY-do-aHK" eventType="touchUpInside" id="zaN-65-DzD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMz-10-mUu">
+                                <rect key="frame" x="404" y="558" width="180" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6ck-D8-Xq7"/>
+                                    <constraint firstAttribute="width" constant="180" id="RLy-xs-7ie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="BCSpace(10, 20, 30, 40)"/>
+                                <connections>
+                                    <action selector="nonzeroSpaceButtonPressed:" destination="SJY-do-aHK" eventType="touchUpInside" id="D3Y-Vj-jOq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Yg-0E-U6r" firstAttribute="leading" secondItem="AXc-Yd-QFz" secondAttribute="leadingMargin" id="0eH-gd-9e5"/>
+                            <constraint firstItem="DMz-10-mUu" firstAttribute="trailing" secondItem="AXc-Yd-QFz" secondAttribute="trailingMargin" id="40O-88-uuj"/>
+                            <constraint firstItem="DMz-10-mUu" firstAttribute="top" secondItem="jJm-eh-YtO" secondAttribute="bottom" constant="8" id="DRS-fJ-cHq"/>
+                            <constraint firstItem="9fh-kQ-bNO" firstAttribute="top" secondItem="jJm-eh-YtO" secondAttribute="bottom" constant="50" id="GRx-Xa-Z02"/>
+                            <constraint firstItem="1Yg-0E-U6r" firstAttribute="top" secondItem="jJm-eh-YtO" secondAttribute="bottom" constant="8" id="OWY-26-Z0k"/>
+                            <constraint firstItem="jJm-eh-YtO" firstAttribute="top" secondItem="AXc-Yd-QFz" secondAttribute="top" id="dPY-aX-PLj"/>
+                            <constraint firstAttribute="trailing" secondItem="jJm-eh-YtO" secondAttribute="trailing" id="tRG-E3-JHO"/>
+                            <constraint firstItem="jJm-eh-YtO" firstAttribute="leading" secondItem="AXc-Yd-QFz" secondAttribute="leading" id="v8R-fy-MZW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="jJm-eh-YtO" id="f5I-QQ-mUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mK8-Ii-hcx" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
