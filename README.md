@@ -14,7 +14,9 @@ Copy BCAutoLayoutView.h and BCAutoLayoutView.m to your directory.
 
 Using Cocoapods
 ---
-Pending...
+```ruby
+pod "BCAutoLayoutView"
+```
 
 Usage
 ---
