@@ -8,6 +8,14 @@ A UIView subclass that create constraints to its superview's inner bounds.
 Installation
 ---
 
+Manual install
+---
+Copy BCAutoLayoutView.h and BCAutoLayoutView.m to your directory.
+
+Using Cocoapods
+---
+Pending...
+
 Usage
 ---
 
