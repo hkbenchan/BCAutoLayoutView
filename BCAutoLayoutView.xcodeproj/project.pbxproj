@@ -14,6 +14,7 @@
 		773243931B9718080016315B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773243921B9718080016315B /* Images.xcassets */; };
 		773243961B9718080016315B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773243941B9718080016315B /* LaunchScreen.xib */; };
 		773243A21B9718080016315B /* BCAutoLayoutViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 773243A11B9718080016315B /* BCAutoLayoutViewTests.m */; };
+		773243AE1B9718710016315B /* BCAutoLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 773243AD1B9718710016315B /* BCAutoLayoutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7732439B1B9718080016315B /* BCAutoLayoutViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCAutoLayoutViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		773243A01B9718080016315B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773243A11B9718080016315B /* BCAutoLayoutViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAutoLayoutViewTests.m; sourceTree = "<group>"; };
+		773243AC1B9718710016315B /* BCAutoLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAutoLayoutView.h; sourceTree = "<group>"; };
+		773243AD1B9718710016315B /* BCAutoLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAutoLayoutView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 				7732438A1B9718080016315B /* AppDelegate.m */,
 				7732438C1B9718080016315B /* ViewController.h */,
 				7732438D1B9718080016315B /* ViewController.m */,
+				773243AB1B9718470016315B /* sources */,
 				7732438F1B9718080016315B /* Main.storyboard */,
 				773243921B9718080016315B /* Images.xcassets */,
 				773243941B9718080016315B /* LaunchScreen.xib */,
@@ -117,6 +121,15 @@
 				773243A01B9718080016315B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		773243AB1B9718470016315B /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				773243AC1B9718710016315B /* BCAutoLayoutView.h */,
+				773243AD1B9718710016315B /* BCAutoLayoutView.m */,
+			);
+			path = sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773243AE1B9718710016315B /* BCAutoLayoutView.m in Sources */,
 				7732438E1B9718080016315B /* ViewController.m in Sources */,
 				7732438B1B9718080016315B /* AppDelegate.m in Sources */,
 				773243881B9718080016315B /* main.m in Sources */,
@@ -350,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BCAutoLayoutView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BCAutoLayoutView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
