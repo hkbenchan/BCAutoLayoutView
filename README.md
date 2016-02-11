@@ -12,7 +12,7 @@ Manual install
 ---
 Copy BCAutoLayoutView.h and BCAutoLayoutView.m to your directory.
 
-Using Cocoapods
+Using CocoaPods
 ---
 ```ruby
 pod "BCAutoLayoutView"
